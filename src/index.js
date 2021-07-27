@@ -1,9 +1,9 @@
 import './css/styles.css';
 
-import API from './fetchCountries';
-import countryCard from './countryCard.hbs';
-import renderCountryList from './renderCountryList.hbs'
-import getRefs from './getRefs.js';
+import API from './js/fetchCountries';
+import countryCard from './templates/countryCard.hbs';
+import renderCountryList from './templates/renderCountryList.hbs'
+import getRefs from './js/getRefs.js';
 
 import Notiflix from "notiflix";
 const DEBOUNCE_DELAY = 300;
