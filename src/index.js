@@ -4,12 +4,14 @@ import API from './fetchCountries';
 import countryCard from './countryCard.hbs';
 import renderCountryList from './renderCountryList.hbs'
 import getRefs from './getRefs.js';
-import Notiflix from "notiflix";
 
+import Notiflix from "notiflix";
+const DEBOUNCE_DELAY = 300;
 
 const debounce = require('lodash.debounce');
-const DEBOUNCE_DELAY = 300;
 const refs = getRefs();
+
+
 
 refs.searchCountry.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
