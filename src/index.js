@@ -39,7 +39,5 @@ function renderCountryCard (countries){
       }
       else if (countries.length >= 2 && countries.length <= 10) {
         refs.countryList.insertAdjacentHTML('afterbegin', renderCountryList(countries));
-       
       } 
-
 }
